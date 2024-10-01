@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+    font-family: 'system-ui';
+}
+
+.offer {
+    background-color: red;
+    display: grid;
+    place-items: center;
+    height: 40px;
+}
+
+.offer p {
+    color: white;
+    font-weight: 600;
+}
+
+header {
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.items {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.food {
+    margin-top: 18px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.article {
+    width: 220px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.article img {
+    width: 90%;
+}
+
+.article p, h2, h3 {
+    text-align: left;
+}
+
+.article p {
+    color: green; 
+}
+
+.article h2 {
+    font-size: 20px;
+}
+
+.article h3 {
+    font-size: 20px;
+    color: green;
+}
+
+.article button {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid green;
+    transition: .3s ease;
+}
+
+.article button:hover {
+    background-color: rgba(0, 128, 31, 0.3);
+}
+
+@media (max-width: 430px) {
+    .offer {
+        height: auto;
+    }
+    .offer p {
+        padding: 15px;
+        font-size: 13px
+    }
+    header {
+        height: auto;
+    }
+    header div {
+        flex-direction: column;
+    }
+    header div h1 {
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .items {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .item {
+        padding: 3px 10px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    .item-none {
+        display: none;
+    }
+}
